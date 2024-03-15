@@ -1,12 +1,3 @@
-package com.b209.hansotbab.fridge.repository;
-
-import com.b209.hansotbab.fridge.entity.Fridge;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import java.util.Optional;
-
-@Repository
-public interface FridgeRepository extends JpaRepository<Fridge, Long> {
-    Optional<Fridge> findByFridgeIdAndIsDeleteFalse(Long fridgeId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c3fbfc14b27f335a12db9c340806ec56df26075b40c9b6cc8ade3f8d587efa54
+size 390
