@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:91e92b600a71cfe77b2e9e85460fc8c0a97c1669b695d90b92b0733a1947a994
-size 420
+package com.b209.hansotbab.user.dto.request;
+
+import lombok.Builder;
+import lombok.Getter;
+
+import java.io.Serializable;
+import java.util.UUID;
+
+@Getter
+public class NicknameDTO implements Serializable {
+
+    private final String email;
+    private final String newNickname;
+
+    @Builder
+    public NicknameDTO(String email, String newNickname) {
+        this.email = email;
+        this.newNickname = newNickname;
+    }
+}
