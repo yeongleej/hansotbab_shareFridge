@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c31302a184e53194b2e82a90c19e7c04bcc0c63b6b37973369d22b890a49a847
-size 355
+package com.b209.hansotbab.food.repository;
+
+import com.b209.hansotbab.food.entity.ElasticSearchItems;
+import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
+import org.springframework.data.repository.CrudRepository;
+
+public interface ElasticSearchItemsRepository extends ElasticsearchRepository<ElasticSearchItems, String> {
+}
